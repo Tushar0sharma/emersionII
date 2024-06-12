@@ -1,0 +1,13 @@
+
+class Solution {
+    static Long[] lcmAndGcd(Long A , Long B) {
+        // code here
+        Long gcd=gcd(A,B);
+        Long lcd=(A*B)/gcd;
+        return new Long[]{lcd,gcd};
+    }
+    public static Long gcd(Long a,Long b){
+        if(b==0) return a;
+        return gcd(b,a%b);
+    }
+};
