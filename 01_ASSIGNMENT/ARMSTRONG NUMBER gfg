@@ -1,0 +1,12 @@
+class Solution {
+    static String armstrongNumber(int n){
+        // code here
+        int s=n;
+        int ans=0;
+        while(s!=0){
+            ans+=Math.pow((s%10),3);
+            s/=10;
+        }
+        return ans==n?"Yes":"No";
+    }
+}
