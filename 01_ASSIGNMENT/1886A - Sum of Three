@@ -1,0 +1,23 @@
+import java.util.*;
+public class hi{
+    public static void main(String[]args) {
+        Scanner sc=new Scanner(System.in);
+        Long n=sc.nextLong();
+        while(n-->0){
+            Long num=sc.nextLong();
+            if(num==9 || num<7){
+                System.out.println("No");
+            }
+            else
+            {
+            System.out.println("Yes");
+            if(num%3==0){
+                System.out.println(1+" "+4+" "+(num-5));
+            }
+            else{
+                System.out.println(1+" "+2+" "+(num-3));
+            }
+            }
+        }
+    }  
+}
