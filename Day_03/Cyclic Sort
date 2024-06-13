@@ -11,6 +11,6 @@ class solution{
                   arr[i]=temp;
               }
           }
-          for(int i:nums) System.out.print(i+" ");
+          for(int i:arr) System.out.print(i+" ");
       }
 }
