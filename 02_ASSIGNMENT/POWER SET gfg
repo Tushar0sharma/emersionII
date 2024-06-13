@@ -1,0 +1,22 @@
+
+class Solution
+{
+    public List<String> AllPossibleStrings(String s)
+    {
+        // Code here
+        List<String>l=new ArrayList<>();
+        call(l,"",s,0);
+        Collections.sort(l);
+        return l;
+    }
+    public void call(List<String>l,String ans,String s,int i){
+        if(i>=s.length()){
+            if(ans.length()!=0){
+                l.add(ans);
+            }
+            return;
+        }
+        call(l,ans+s.charAt(i),s,i+1);
+        call(l,ans,s,i+1);
+    }
+}
