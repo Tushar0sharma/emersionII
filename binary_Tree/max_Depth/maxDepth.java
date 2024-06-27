@@ -1,4 +1,4 @@
- class node{
+class node{
     int val;
     node left;
     node right;
@@ -13,7 +13,7 @@
 }
 public class maxDepth {
     public static void main(String[] args) {
-        int []a={1,2,3,2,2,3,23,2,23,4232,2,2,33};
+        int []a={1,2,33};
         node tree=create(a,0);
         System.out.println(depth(tree,1));
     }
